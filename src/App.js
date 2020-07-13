@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Category from './Category';
 import Facts from './Facts';
 import norris from './img/chuck_norris.png';
+import logo from './img/chuck_norris_logo.png';
 
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
     return (
       <div className="container">
         <header>
-          <h2 className="logo">Chuck Norris Facts</h2>
+          <img className="logo" src={logo} alt="Chuck Norris Facts" />
           <nav className="navbar">
             <Category />
           </nav>
