@@ -6,13 +6,13 @@ class Category extends Component {
         return (
             <>
                 <label>Category:</label>
-                <select name="category" id="category">
+                <select className="select-category" name="category" id="category">
                     <option value="animal">Animal</option>
                     <option value="celebrity">Celebrity</option>
                     <option value="money">Money</option>
                     <option value="history">History</option>
                 </select>
-                <input type="submit" value="Get Fact"></input>
+                <input className="btn-category" type="submit" value="Get Fact"></input>
             </>
         )
     }

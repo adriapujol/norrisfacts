@@ -1,4 +1,8 @@
 @import "bg-pattern.scss";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+
+$btn-color: #ffbf69;
 
 @mixin centerThings {
     display: flex;
@@ -10,6 +14,8 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
 }
 
 
@@ -18,9 +24,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-areas:
-        '. header header .'
-        '. section section .'
-        '. section section .'
+        'header header header header'
         '. section section .'
         '. footer footer .'
     ;
@@ -30,10 +34,10 @@ body {
 
     header {
         grid-area: header;
-        // height: 10vh;
+        background-color: rgba(19, 89, 98, 0.8);
+        width: 100%;
         @include centerThings();
-        justify-content: space-between;
-        margin: 0 10px;
+        justify-content: space-around;
 
         .logo {
             height: 40px;
@@ -44,21 +48,62 @@ body {
             }
         }
 
+        .navbar {
+            width: 235px;
+            @include centerThings();
+            justify-content: space-between;
+            color: white;
+
+            .select-category {
+                padding: 4px;
+            }
+            
+            .btn-category {
+                background-color: #ec5e59;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 6px 10px;
+                border: none;
+                cursor: pointer;
+
+                &:hover, &:focus, &:active {
+                    background-color: #a33531;
+                    outline:0 !important;
+                    border: none;
+                    text-decoration: none;
+                }
+
+                
+            }
+
+
+            
+
+            .btn-category {
+                // padding: 10px;
+                // border-radius: 5px;
+                // background-color: $btn-color;
+            }
+        }
+
     }
 
     section {
         grid-area: section;
         @include centerThings();
         flex-direction: column-reverse;
-        padding: 0px 40px;
+        padding: 10px 40px 0px 40px;
         .norris {
             height: 55vh;
-            margin-top: 30px;
+            margin-top: 15px;
         }
         .fact-box {
            background-color: rgba(255, 255, 255, 0.6);
            border-radius: 20px;
            padding: 20px;
+           text-align: center;
+           line-height: 1.5rem;
         }
     }
 
