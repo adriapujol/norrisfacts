@@ -4,7 +4,14 @@ import React, { Component } from 'react';
 class Category extends Component {
     render() {
         return (
-            <h1>hi dummy</h1>
+            <>
+                <label>Category:</label>
+                <select name="category" id="category">
+                    <option value="animal">Animal</option>
+                    <option value="celebrity">Celebrity</option>
+                </select>
+                <input type="submit" value="Get Fact"></input>
+            </>
         )
     }
 }

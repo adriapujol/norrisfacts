@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Category from './Category';
-import norris from './img/chuck_norris_s.png';
+import Facts from './Facts';
+import norris from './img/chuck_norris.png';
 
 
 class App extends Component {
@@ -14,8 +15,10 @@ class App extends Component {
           </nav>
         </header>
         <section>
-          <img id="norris" src={norris} alt="Norris"></img>
+          <img className="norris" id="norris" src={norris} alt="Norris"></img>
+          <Facts />
         </section>
+        <footer>by adrienhill</footer>
       </div>
     );
   }
