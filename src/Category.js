@@ -1,22 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
-class Category extends Component {
-    render() {
+function Category({ categories, onSubmitCategory, handleCategory }) {
+        const categoryList = categories.map(category => <option key={category} value={category}>{category}</option>);
+
         return (
             <>
                 <label>Category:</label>
-                <select className="select-category" name="category" id="category">
-                    <option value="animal">Animal</option>
-                    <option value="celebrity">Celebrity</option>
-                    <option value="money">Money</option>
-                    <option value="history">History</option>
+                <select className="select-category" name="category" id="category" onChange={handleCategory}>
+                    {categoryList}
                 </select>
-                <input className="btn-category" type="submit" value="Get Fact"></input>
+                <input className="btn-category" type="submit" value="Get Fact" onClick={onSubmitCategory}></input>
             </>
         )
-    }
-}
 
+}
 
 export default Category;

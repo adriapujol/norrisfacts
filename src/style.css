@@ -50,11 +50,8 @@ body {
   border: none;
   cursor: pointer;
 }
-.container header .navbar .btn-category:hover, .container header .navbar .btn-category:focus, .container header .navbar .btn-category:active {
+.container header .navbar .btn-category:hover {
   background-color: #a33531;
-  outline: 0 !important;
-  border: none;
-  text-decoration: none;
 }
 .container section {
   position: relative;

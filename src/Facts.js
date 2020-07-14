@@ -1,10 +1,13 @@
 import React from 'react';
 
 
-function Facts() {
+function Facts( { fact, loading }) {
         return (
             <div className="fact-box">
-                <div>Chuck Norris threw a grenade and killed 50 people, then it exploded.</div>
+                {loading ? 
+                    <div>Summoning fact...</div> :
+                    <div>{fact}</div>
+                }
             </div>    
         );
     
