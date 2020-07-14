@@ -18,6 +18,7 @@ class App extends Component {
         <section>
           <img className="norris" id="norris" src={norris} alt="Norris"></img>
           <Facts />
+          <div className="bg-letters">chuck norris facts</div>
         </section>
         <footer>by adrienhill</footer>
       </div>
