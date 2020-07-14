@@ -13,6 +13,7 @@ class App extends Component {
       categories: [],
       category: "animal",
       fact: "Chuck Norris threw a grenade and killed 50 people, then it exploded.",
+      loading: false,
     }
   }
 
@@ -33,21 +34,30 @@ class App extends Component {
     })
   }
   
-  onSubmitCategory = () => {
+  onSubmitCategory = async () => {
 
-    fetch(`https://api.chucknorris.io/jokes/random?category=${this.state.category}`)
-      .then(res => res.json())
-      .then(fact => {
-        this.setState({
-          fact: fact.value,
-        })
+    try {
+      this.setState({
+        loading: true,
+      })
+      const factUrl = `https://api.chucknorris.io/jokes/random?category=${this.state.category}`;
+      const response = await fetch(factUrl)
+      const fact = await response.json();
+      this.setState({
+        fact: fact.value,
       });
-    console.log("hi");
+    } catch(err) {
+
+    } finally {
+      this.setState({
+        loading: false,
+      })
+    }
   }
 
   render() {
 
-    const { categories, fact } = this.state;
+    const { categories, fact, loading } = this.state;
 
     return (
       <div className="container">
@@ -59,7 +69,7 @@ class App extends Component {
         </header>
         <section>
           <img className="norris" id="norris" src={norris} alt="Norris"></img>
-          <Facts fact={fact} />
+          <Facts fact={fact} loading={loading} />
           <div className="bg-letters">chuck<br />norris<br />facts</div>
         </section>
         <footer>by adrienhill</footer>

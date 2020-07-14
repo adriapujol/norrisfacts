@@ -16,5 +16,4 @@ function Category({ categories, onSubmitCategory, handleCategory }) {
 
 }
 
-
 export default Category;

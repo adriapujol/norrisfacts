@@ -1,10 +1,13 @@
 import React from 'react';
 
 
-function Facts(props) {
+function Facts( { fact, loading }) {
         return (
             <div className="fact-box">
-                <div>{props.fact}</div>
+                {loading ? 
+                    <div>Summoning fact...</div> :
+                    <div>{fact}</div>
+                }
             </div>    
         );
     
