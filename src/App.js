@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Category from './Category';
 import Facts from './Facts';
-import norris from './img/chuck_norris.png';
+import norris from './img/chuck_norris_s.png';
 import logo from './img/chuck_norris_logo.png';
 
 
