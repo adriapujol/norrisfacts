@@ -24,6 +24,7 @@ body {
 .container header .logo {
   height: 40px;
   transition: all 0.3s ease-in-out;
+  z-index: 4;
 }
 .container header .logo:hover {
   transform: rotate(360deg);
@@ -35,6 +36,7 @@ body {
   justify-content: center;
   justify-content: space-between;
   color: white;
+  z-index: 5;
 }
 .container header .navbar .select-category {
   padding: 4px;
@@ -75,7 +77,7 @@ body {
   box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.6);
   border-radius: 20px;
   padding: 20px;
-  width: 60%;
+  width: clamp(150px, 60%, 500px);
   text-align: center;
   line-height: 1.5rem;
   z-index: 3;
@@ -86,10 +88,14 @@ body {
   justify-content: center;
   opacity: 0.6;
   text-align: center;
+  text-justify: inter-word;
+  letter-spacing: 5vw;
   position: absolute;
+  left: 0;
+  right: 0;
   color: white;
-  font-size: 700%;
-  line-height: 10rem;
+  font-size: clamp(200px, 30vw, 300px);
+  line-height: clamp(20px, 80%, 500px);
   text-transform: uppercase;
   font-family: "Kanit", sans-serif;
   z-index: 1;
