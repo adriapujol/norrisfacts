@@ -12,6 +12,14 @@ Created with REACT
 
 Chuck Norris made me do it.
 
+## Zlatan Ibrahimovic
+
+Yes, he also has a version: 
+
+https://adriapujol.github.io/zlatanfacts/
+
+GitHub: https://github.com/adriapujol/zlatanfacts
+
 ## Credits
 
 Code and Design by yours truly, me.
