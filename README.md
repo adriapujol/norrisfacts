@@ -8,3 +8,14 @@ https://adriapujol.github.io/norrisfacts/
 
 Created with REACT 
 
+## Motivation
+
+Chuck Norris made me do it.
+
+## Credits
+
+Code and Design by yours truly, me.
+
+API: https://api.chucknorris.io/
+
+Last but not least, the Chuck.
