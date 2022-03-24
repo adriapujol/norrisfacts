@@ -1,8 +1,6 @@
 # Chuck Norris Facts
 
-Get Chuck Norris Facts by category.
-
-https://adriapujol.github.io/norrisfacts/
+Get [Chuck Norris Facts](https://adriapujol.github.io/norrisfacts/) by category.
 
 <a href="https://adriapujol.github.io/norrisfacts/"><img src="images/norrisfacts.JPG" title="ChuckNorrisFacts" alt="ChuckNorrisFacts"></a>
 
@@ -14,16 +12,14 @@ Chuck Norris made me do it.
 
 ## Zlatan Ibrahimovic
 
-Yes, he also has a version: 
+Yes, he also has a version [here](https://adriapujol.github.io/zlatanfacts/)
 
-https://adriapujol.github.io/zlatanfacts/
-
-GitHub: https://github.com/adriapujol/zlatanfacts
+[GitHub](https://github.com/adriapujol/zlatanfacts)
 
 ## Credits
 
 Code and Design by yours truly, me.
 
-API: https://api.chucknorris.io/
+[Chuck Norris Facts API](https://api.chucknorris.io/)
 
 Last but not least, the Chuck.
